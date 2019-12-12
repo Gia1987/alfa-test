@@ -1,10 +1,13 @@
 # dotenv environment variables file
 .env
 
+# misc
+.DS_Store
+
 # next.js build output
 .next
 
 .cache
-dist/
+package-lock.*
 git/
 node_modules/

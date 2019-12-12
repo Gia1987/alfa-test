@@ -36,7 +36,7 @@
 ## Usage
 
 ```bash
- npm run build
+ npm run build	# the app will be available on /dist folder in the root 
  npm run dev    # for localhost dev
 ```
 

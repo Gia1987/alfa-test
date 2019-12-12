@@ -8,7 +8,6 @@ import { setItemLS, removeAllLSs, readLS  } from '../../../utils';
 import {LogsContainer } from '../LogsContainer';
 
 jest.mock('../../../utils');
-const setItemLSMock = jest.fn().mockName('setItemLS');
 
 const setup = () => {
     const props = {
@@ -79,7 +78,6 @@ describe('LogsContainer', () => {
     });
     describe('methods', ()=>{
         afterEach(() => {
-            setItemLSMock.mockReset();
             MockDate.reset();
         });
 

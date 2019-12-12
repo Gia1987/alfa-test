@@ -20,6 +20,7 @@ export class TasksIndexContainer extends PureComponent {
         const { toggleCollapse } = this;
         return (
             <TasksIndex
+                data-cy="tasks-index"
                 toggleCollapse={toggleCollapse}
                 activeIndex={activeIndex}
             />

@@ -11,10 +11,12 @@ export class DetailsIndexContainer extends PureComponent {
         const task = TASKS_DATA.find(item => item.taskId === taskId);
         return (
             <DetailsIndex
+                data-cy="details-index"
                 date={task.date}
                 costumer={task.costumer}
                 body={task.body}
                 img={task.img}
+                logs={task.logs}
             />
         );
     }

@@ -1,6 +1,9 @@
 export const styles = {
+    container:{
+        display: 'flex',
+        flexDirection: 'column'
+    },
     tasksContainer: {
-        position: 'fixed',
         background: '#ffffff',
         boxShadow: `0 4px 4px 0 rgba(0,0,0,0.26), 0 7px 14px 0 rgba(0,0,0,0.19)`,
         borderRadius: 2,
@@ -10,7 +13,7 @@ export const styles = {
         marginTop: 115
     },
     tasksInternalContainer: {
-        marginBottom: 30
+        marginBottom: 75
     },
     title: {
         fontSize: 18,
@@ -18,7 +21,6 @@ export const styles = {
         textAlign: 'left',
         marginLeft: 23,
         marginTop: 25,
-        color: ':#4a4a4a'
     },
     line: {
         border: '1px solid #979797',
@@ -39,10 +41,16 @@ export const styles = {
         color: 'rgba(0,0,0,0.87)',
         fontSize: 12
     },
+    imageAndName: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
     profileSection: {
         width: 1050,
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'space-between',
         marginLeft: 26,
         marginBottom: 16
     },
@@ -52,5 +60,8 @@ export const styles = {
         color: '#4a4a4a',
         fontWeight: 'bold'
     },
-    date: {}
+    log:{
+        marginTop: -50
+    }
 };
+export { styles as default };

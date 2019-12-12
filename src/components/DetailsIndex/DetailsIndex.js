@@ -1,30 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
 import { Image } from 'semantic-ui-react';
 // import { TASKS_DATA, LINK_TASK_DETAILS } from '../../constants';
+import Logs from '../Logs';
 import { styles } from './styles';
 
-const DetailsIndex = ({ body, date, costumer, img }) => {
+const DetailsIndex = ({ body, date, costumer, img, logs }) => {
     return (
-        <div>
+        <div style={styles.container}>
             <div style={styles.tasksContainer}>
                 <div style={styles.tasksHeader}>
                     <div style={styles.title}>Tasks Information</div>
                     <div style={styles.line}></div>
                 </div>
-
                 <div style={styles.tasksInternalContainer}>
                     <div style={styles.profileSection}>
-                        <div style={styles.img}>
+                        <div style={styles.imageAndName}>
                             <Image src={img} size="tiny" circular />
+                            <div style={styles.costumer}>{costumer}</div>
                         </div>
-                        <div style={styles.costumer}>{costumer}</div>
-                        <div style={styles.date}>{date.split(' ')[0]}</div>
+                        <div>{date.split(' ')[0]}</div>
                     </div>
                     <div style={styles.body}>{body}</div>
                 </div>
             </div>
+            <Logs data-cy="logs" logs={logs}/>
         </div>
     );
 };
@@ -32,6 +32,8 @@ const DetailsIndex = ({ body, date, costumer, img }) => {
 DetailsIndex.propTypes = {
     body: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-    costumer: PropTypes.string.isRequired
+    costumer: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    logs: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 export default DetailsIndex;

@@ -1,4 +1,8 @@
 export const styles = {
+    container:{
+        width:'100%',
+        height: 'auto',
+    },
     header: {
         position: 'fixed',
         height: 66,
@@ -18,3 +22,4 @@ export const styles = {
         marginLeft: 66
     }
 };
+export { styles as default };

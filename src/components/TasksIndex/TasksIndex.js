@@ -3,8 +3,8 @@ import fast from 'fast.js';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'react-collapse';
-import { Button, Image } from 'semantic-ui-react';
-import { TASKS_DATA, LINK_TASK_DETAILS } from '../../constants';
+import { Button} from 'semantic-ui-react';
+import { TASKS_DATA, LINK_TASK_ID } from '../../constants';
 import { styles } from './styles';
 
 const TasksIndex = ({ toggleCollapse, activeIndex }) => {
@@ -16,60 +16,45 @@ const TasksIndex = ({ toggleCollapse, activeIndex }) => {
                     <div style={styles.line}></div>
                 </div>
                 <div style={styles.tasksInternalContainer}>
-                    <table style={styles.table}>
-                        <tr style={styles.tableHeader}>
-                            <td style={styles.td}>Task Number</td>
-                            <td style={styles.td}>Note</td>
-                            <td style={styles.td}>Costumer</td>
-                            <td style={styles.td}>Date</td>
-                        </tr>
-                    </table>
+                    <div style={ styles.taskWrapper}>
+                        <div style={styles.task}>
+                            <div style={styles.taskId}>Task Number</div>
+                            <div style={styles.noteTitle}>Note</div>
+                        </div>
+                        <div style={styles.task}>
+                            <div>Costumer</div>
+                            <div style={styles.dateTitle}>Date
+                            </div>
+                        </div>
+                    </div>
                     {fast.map(TASKS_DATA, (item, index) => {
-                        const isOdd = index % 2;
+                        const isOdd = index % 2 === 0;
                         return (
-                            <Fragment key={`table-${index}`}>
-                                <table style={styles.table}>
-                                    <tr
-                                        style={
-                                            isOdd ? styles.trOdd : styles.trEven
-                                        }
-                                    >
-                                        <td style={styles.td}>{item.taskId}</td>
-                                        <td style={styles.td}>{item.note}</td>
-                                        <td style={styles.td}>
-                                            {item.costumer}
-                                        </td>
-                                        <td style={styles.td}>
-                                            {item.date}{' '}
-                                            <Button
-                                                style={styles.btn}
-                                                icon={
-                                                    activeIndex === index
-                                                        ? `angle up`
-                                                        : `angle down`
-                                                }
-                                                onClick={toggleCollapse}
-                                                index={index}
-                                            ></Button>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <Collapse isOpened={activeIndex === index}>
-                                    <div
-                                        style={
-                                            isOdd
-                                                ? styles.bodyOdd
-                                                : styles.bodyEven
-                                        }
-                                    >
-                                        {item.body}
-                                        <Link
-                                            style={styles.viewTask}
-                                            to={{
-                                                pathname: `${LINK_TASK_DETAILS}${item.taskId}`
-                                            }}
-                                        >
-                                            View Task
+                            <Fragment key={`task-${index}`}>
+                                <div style={isOdd ? styles.containerOdd : styles.containerEven}>
+                                    <div style={ styles.taskWrapper}>
+                                        <div style={styles.task}>
+                                            <div>{item.taskId}</div>
+                                            <div style={styles.note}>{item.note}</div>
+                                        </div>
+                                        <div style={styles.task}>
+                                            <div>{item.costumer}</div>
+                                            <div style={styles.date}>{item.date}{' '}
+                                                <Button
+                                                    data-cy={`btn-${index}`}
+                                                    style={styles.btn}
+                                                    icon={ activeIndex === index ? `angle up`: `angle down`}
+                                                    onClick={toggleCollapse}
+                                                    index={index}
+                                                ></Button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <Collapse data-cy={`collapse-${index}`} isOpened={activeIndex === index}>
+                                    <div style={isOdd? styles.bodyOdd: styles.bodyEven}>
+                                        <div style={styles.body}>{item.body}</div>
+                                        <Link data-cy={`link-${index}`} style={styles.viewTask} to={`${LINK_TASK_ID}${item.taskId}`}>
+                                          VIEW TASK
                                         </Link>
                                     </div>
                                 </Collapse>

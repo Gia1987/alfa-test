@@ -10,7 +10,7 @@ export const styles = {
         marginTop: 115
     },
     tasksInternalContainer: {
-        marginBottom: 30
+        marginBottom: 75
     },
     title: {
         fontSize: 18,
@@ -18,7 +18,6 @@ export const styles = {
         textAlign: 'left',
         marginLeft: 23,
         marginTop: 25,
-        color: ':#4a4a4a'
     },
     line: {
         border: '1px solid #979797',
@@ -31,51 +30,68 @@ export const styles = {
         display: 'flex',
         flexDirection: 'column'
     },
-    table: {
+    taskWrapper: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 23,
+        height: 35,
+        textAlign: 'left',
+        color: 'rgba(0,0,0,0.87)',
+        fontSize: 12
+    },
+    task: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
+
+    containerOdd:{
         width: 1050,
-        borderCollapse: 'collapse',
-        marginLeft: 26
-    },
-    tableHeader: {
-        marginLeft: 26,
-        fontSize: 12,
-        textAlign: 'left',
-        color: 'rgba(0,0,0,0.54)'
-    },
-    trOdd: {
-        background: '#ffffff',
-        height: 35,
-        textAlign: 'left',
-        color: 'rgba(0,0,0,0.87)',
-        fontSize: 12
-    },
-    trEven: {
+        marginLeft: 23,
         background: '#F1F1F1',
-        height: 35,
-        textAlign: 'left',
-        color: 'rgba(0,0,0,0.87)',
-        fontSize: 12
     },
-    td: {
-        width: '28%'
+    containerEven:{
+        width: 1050,
+        marginLeft: 23,
+        background: '#ffffff',
+    },
+    note:{
+        marginLeft: 88
+    },
+    date:{
+        marginLeft: 118,
+    },
+    taskId:{
+        marginLeft: 23,
+    },
+    noteTitle:{
+        marginLeft: 56,
+    },
+    dateTitle:{
+        marginRight: 150,
+        marginLeft: 150,
+    },
+    body:{
+        marginLeft: 9
     },
     btn: {
         background: 'none',
         marginLeft: 20
     },
     bodyEven: {
-        background: '#F1F1F1',
+        background: '#ffffff',
         width: 1050,
-        marginLeft: 26,
+        marginLeft: 23,
         height: 100,
         textAlign: 'left',
         color: 'rgba(0,0,0,0.87)',
         fontSize: 12
     },
     bodyOdd: {
-        background: '#ffffff',
+        background: '#F1F1F1',
         width: 1050,
-        marginLeft: 26,
+        marginLeft: 23,
         height: 100,
         textAlign: 'left',
         color: 'rgba(0,0,0,0.87)',
@@ -84,8 +100,10 @@ export const styles = {
     viewTask: {
         display: 'flex',
         justifyContent: 'flex-end',
-        marginRight: 15,
+        marginRight: 35,
         marginTop: 50,
         fontSize: 14
     }
 };
+
+export { styles as default };

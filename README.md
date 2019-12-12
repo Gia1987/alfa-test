@@ -13,19 +13,26 @@
 	In the Task Details the user can :
 
 	- View the task information.
-	- Displays a thread of “logs” associated with an event. Logs can be of type“General Note” or “Call note”. Both have their own icon. Both consist of a large piece of text describing some event or custom interaction.
-	- Add a general note or a call note. Both will allow for a“message” field. If the addition is a call note, you should be able to log the call duration.
+	- Displays a thread of “logs” associated with an event. Logs can be of type“General Note” or “Call note”.
+	  Both have their own icon. Both consist of a large piece of text describing some event or custom interaction.
+	- Add a general note or a call note. Both will allow for a“message” field.
+	 If the addition is a call note, you should be able to log the call duration.
 
 	Persistence data is available by using localStorage.
 
 	This App has been tested using Jest.
 
 
+## Technology
+
+- React.js
+- Html and CSS,
+- Parcel JS (web application bundler): ([https://parceljs.org/](https://parceljs.org/))
+- Jest (Unit Test)
+
 ## Prerequiresites
 
-```bash
-	NodeJS: https://nodejs.org/en/download/
-```
+	NodeJS: ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
 
 ## Installation
 
@@ -36,7 +43,7 @@
 ## Usage
 
 ```bash
- npm run build	# the app will be available on /dist folder in the root 
+ npm run build	# the app will be available on /dist folder in the root
  npm run dev    # for localhost dev
 ```
 

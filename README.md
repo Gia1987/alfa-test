@@ -30,18 +30,18 @@
 ## Installation
 
 ```bash
-	git clone https://github.com/Gia1987/alfa-test.git
-  npm install
+ git clone https://github.com/Gia1987/alfa-test.git
+ npm install
 ```
 ## Usage
 
 ```bash
-	npm run build
-	npm run dev    # for localhost dev
+ npm run build
+ npm run dev    # for localhost dev
 ```
 
 ## Testing
 
 ```bash
-  npm run test  # for unit test
+ npm run test  # for unit test
 ```

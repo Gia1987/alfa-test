@@ -1,9 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import {
-    LINK_TASKS_INDEX,
-} from '../../../constants';
-import { Header } from '../Header';
+import { LINK_TASKS_INDEX } from '../../../constants';
+import { Header } from '../header';
 
 const setup = () => {
     const props = {
@@ -15,7 +13,7 @@ const setup = () => {
 
     return {
         component,
-        logo,
+        logo
     };
 };
 
@@ -27,11 +25,8 @@ describe('Header', () => {
     });
 
     it('should pass the right props', () => {
-        const {
-            logo,
-        } = setup();
+        const { logo } = setup();
 
         expect(logo.to).toEqual(LINK_TASKS_INDEX);
-
     });
 });

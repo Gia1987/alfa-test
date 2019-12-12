@@ -3,10 +3,14 @@ import costumer2 from './assets/costumer2.png';
 import noteSvg from './assets/note.svg';
 import phoneSvg from './assets/phone.svg';
 
-export const LINK_TASKS_INDEX = '/';
+export const LINK_LOGIN = '/';
+export const LINK_TASKS_INDEX = '/tasks';
 export const LINK_TASK_ID = '/task/';
 export const LINK_TASKS_DETAILS = '/details';
 export const COMPANY_NAME = 'Alfa Systems';
+export const VALID_EMAIL = 'test@email.com';
+export const VALID_PASSWORD = 'test';
+export const NOTIFICATION = 'Sorry, you are not authorised.';
 
 export const TASKS_DATA = [
     {

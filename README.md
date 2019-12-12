@@ -20,6 +20,10 @@
 
 	Persistence data is available by using localStorage.
 
+	A fake login page allows user to login and be redirected to Task Index page.
+	- email: test@email.com
+	- password: test
+
 	This App has been tested using Jest.
 
 

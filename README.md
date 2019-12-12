@@ -1,6 +1,6 @@
 # Alfa Systems
 
-## description
+## Description
 
 	Implemented Task Index and Task Details screen.
 
@@ -23,16 +23,16 @@
 	This App has been tested using Jest.
 
 
+## Prerequisite
+
+- NodeJS: ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
+
 ## Technology
 
 - React.js
 - Html and CSS,
 - Parcel JS (web application bundler): ([https://parceljs.org/](https://parceljs.org/))
 - Jest (Unit Test)
-
-## Prerequiresites
-
-	NodeJS: ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
 
 ## Installation
 
@@ -43,7 +43,7 @@
 ## Usage
 
 ```bash
- npm run build	# the app will be available on /dist folder in the root
+ npm run build  # the app will be available on /dist folder in the root
  npm run dev    # for localhost dev
 ```
 

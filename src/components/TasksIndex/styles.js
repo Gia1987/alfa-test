@@ -17,7 +17,7 @@ export const styles = {
         color: '#4a4a4a',
         textAlign: 'left',
         marginLeft: 23,
-        marginTop: 25,
+        marginTop: 25
     },
     line: {
         border: '1px solid #979797',
@@ -35,7 +35,7 @@ export const styles = {
         alignItems: 'center',
         justifyContent: 'space-between',
         marginLeft: 23,
-        height: 35,
+        minHeight: 35,
         textAlign: 'left',
         color: 'rgba(0,0,0,0.87)',
         fontSize: 12
@@ -43,36 +43,36 @@ export const styles = {
     task: {
         display: 'flex',
         alignItems: 'center',
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
 
-    containerOdd:{
+    containerOdd: {
         width: 1050,
         marginLeft: 23,
-        background: '#F1F1F1',
+        background: '#F1F1F1'
     },
-    containerEven:{
+    containerEven: {
         width: 1050,
         marginLeft: 23,
-        background: '#ffffff',
+        background: '#ffffff'
     },
-    note:{
+    note: {
         marginLeft: 88
     },
-    date:{
-        marginLeft: 118,
+    date: {
+        marginLeft: 118
     },
-    taskId:{
-        marginLeft: 23,
+    taskId: {
+        marginLeft: 23
     },
-    noteTitle:{
-        marginLeft: 56,
+    noteTitle: {
+        marginLeft: 56
     },
-    dateTitle:{
+    dateTitle: {
         marginRight: 150,
-        marginLeft: 150,
+        marginLeft: 150
     },
-    body:{
+    body: {
         marginLeft: 9
     },
     btn: {
@@ -83,7 +83,7 @@ export const styles = {
         background: '#ffffff',
         width: 1050,
         marginLeft: 23,
-        height: 100,
+        minHeight: 100,
         textAlign: 'left',
         color: 'rgba(0,0,0,0.87)',
         fontSize: 12
@@ -92,7 +92,7 @@ export const styles = {
         background: '#F1F1F1',
         width: 1050,
         marginLeft: 23,
-        height: 100,
+        minHeight: 100,
         textAlign: 'left',
         color: 'rgba(0,0,0,0.87)',
         fontSize: 12

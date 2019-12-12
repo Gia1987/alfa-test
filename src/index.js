@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 import { LINK_TASKS_INDEX, LINK_TASK_ID, LINK_LOGIN } from './constants';
 import Login from './components/Login';
-import Header from './components/Header';
+import Header from './components/header';
 import Tasks from './components/TasksIndex';
 import Details from './components/DetailsIndex';
 

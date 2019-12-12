@@ -16,7 +16,7 @@ export const styles = {
         color: '#4a4a4a',
         textAlign: 'left',
         marginLeft: 23,
-        marginTop: 25,
+        marginTop: 25
     },
     line: {
         border: '1px solid #979797',
@@ -41,24 +41,25 @@ export const styles = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height:55,
-        marginBottom: 20
+        minHeight: 55,
+        marginBottom: 10
     },
 
     logSectionEven: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        minHeight: 55,
         marginBottom: 10
     },
     iconAndBody: {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'row',
-        marginLeft:26
+        marginLeft: 26
     },
-    logDate:{
-        marginRight:40
+    logDate: {
+        marginRight: 40
     },
     costumer: {
         marginLeft: 30,
@@ -66,41 +67,41 @@ export const styles = {
         color: '#4a4a4a',
         fontWeight: 'bold'
     },
-    icon:{
+    icon: {
         fill: 'green',
-        width:20,
-        height:20,
+        width: 20,
+        height: 20
     },
-    btnWrapper:{
+    btnWrapper: {
         display: 'flex',
-        alignItems:'center',
-        flexDirection:'row',
+        alignItems: 'center',
+        flexDirection: 'row'
     },
-    btnContainer:{
+    btnContainer: {
         display: 'flex',
-        alignItems:'center',
-        flexDirection:'row',
+        alignItems: 'center',
+        flexDirection: 'row',
         justifyContent: 'flex-end',
         marginRight: 36
     },
-    btn:{
+    btn: {
         display: 'flex',
-        flexDirection:'row',
-        justifyContent:'space-evenly',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
         marginLeft: 30,
-        background:'#cfcfcf',
+        background: '#cfcfcf',
         boxShadow: '0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24)',
-        textAlign:'center',
-        color:'#292d45',
+        textAlign: 'center',
+        color: '#292d45',
         fontSize: 14,
-        borderRadius:2,
-        width:137,
-        height:36,
-        marginTop:10,
-        marginBottom:29
+        borderRadius: 2,
+        width: 137,
+        height: 36,
+        marginTop: 10,
+        marginBottom: 29
     },
-    textArea:{
-        marginBottom:20
+    textArea: {
+        marginBottom: 20
     }
 };
 export { styles as default };

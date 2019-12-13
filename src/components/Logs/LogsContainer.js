@@ -79,7 +79,7 @@ export class LogsContainer extends PureComponent {
         return (
             <div>
                 <Logs data-cy="logs" onOpenModal={this.onOpenModal} addNote={this.addNote} logs={taskLogs}/>
-                <Modal data-cy="modal" open={open} showCloseIcon={false} center>
+                <Modal data-cy="modal" open={open} showCloseIcon={false} onClose={()=>{}} center>
                     <Form data-cy="form" >
                         <Form.Field data-cy="text-area" control={TextArea} style={styles.textArea} value={input} onChange={this.handleChange} placeholder='type here...'/>
                         <div style={styles.btnContainer}>
@@ -98,11 +98,11 @@ export class LogsContainer extends PureComponent {
 }
 
 LogsContainer.propTypes = {
-    logs: PropTypes.shape({
-        icon: PropTypes.string,
+    logs: PropTypes.arrayOf(PropTypes.shape({
+        icon: PropTypes.shape({}),
         body: PropTypes.string,
         date: PropTypes.string,
-    }).isRequired
+    })).isRequired
 };
 
 export default LogsContainer;

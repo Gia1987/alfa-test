@@ -53,7 +53,7 @@ const Logs = ({logs, onOpenModal}) => {
 
 Logs.propTypes = {
     logs: PropTypes.arrayOf(PropTypes.shape({
-        icon: PropTypes.string,
+        icon: PropTypes.shape({}),
         body: PropTypes.string,
         date: PropTypes.string,
     })).isRequired,

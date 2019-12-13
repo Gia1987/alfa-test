@@ -33,7 +33,7 @@ DetailsIndex.propTypes = {
     body: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     costumer: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
+    img: PropTypes.shape({}).isRequired,
     logs: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 export default DetailsIndex;

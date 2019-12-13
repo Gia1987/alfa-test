@@ -5,7 +5,7 @@ import Logs from '../Logs';
 const setup = () => {
     const props = {
         onOpenModal: () => {},
-        logs: { icon: '', body:'', date:'' },
+        logs: [{ icon: {}, body:'', date:'' }],
     };
 
     const component = shallow(<Logs {...props} />);

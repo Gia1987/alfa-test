@@ -7,7 +7,7 @@ const setup = () => {
         body: 'test',
         date: 'test',
         costumer: 'test',
-        img: 'test',
+        img: {},
         logs:[]
     };
 
